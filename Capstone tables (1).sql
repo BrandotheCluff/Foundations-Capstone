@@ -9,5 +9,5 @@ CREATE TABLE "client" (
 CREATE TABLE "questions" (
   "question_id" SERIAL PRIMARY KEY,
   "questions" VARCHAR(500),
-  'email' VARCHAR(50)
+  "email" VARCHAR(50)
 )
