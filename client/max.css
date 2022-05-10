@@ -1,0 +1,48 @@
+main {
+display: flex;
+justify-content: space-evenly;
+align-content: center;
+flex: 1;
+background: linear-gradient(
+    rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 0.8)), url(https://image.boxrox.com/2017/09/Clarence-Kennedy.png)
+}
+section.Calculator{
+    align-self: center;
+    background: rgb(99, 99, 213);
+    margin-left: 30px;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: rgb(57, 55, 55);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+form {
+    align-self: center;
+    background-color: aquamarine;
+    margin-right: 110px;
+}
+
+h4 {
+text-align: center;
+}
+
+div {
+    padding: 15px;
+}
+
+button#get-maxes {
+    margin-left: 130px;
+}
+
+button#question {
+    margin-left: 60px;
+}
+p{
+    text-align: center;
+}

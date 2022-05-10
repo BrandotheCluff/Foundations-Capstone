@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    margin: 30px;
+    background: url(http://drive.google.com/uc?export=view&id=1YH4mPiTE7nlYsYNDl2YRyuNw5wxfrGzr);
+    height: 80vh;
+    width: 50vw;
+}
+
+form {
+    border: rgb(192, 192, 192);
+    border-radius: 10px;
+    border-style: outset;
+    justify-content: flex-end;
+    background: rgb(173, 238, 173);
+    height: 60vh;
+    margin: 36px;
+    width: 20vw;
+}
+h4 {
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)), url(https://www.bodybuilding.com/images/2021/april/bb_push_press-700xh.gif);
+    background-repeat: repeat;
+    background-size: 100%;
+    background-blend-mode: darken;
+}

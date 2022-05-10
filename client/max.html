@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="max.css">
+    <title>Buff Cluff Max Calculator</title>
 </head>
+
 <body>
-    <header>
-        <h2 class title="site-title">Buff Cluff Training</h2>
-    </header>
+    
     <main>
         <section class="Calculator">
             <h4>Max Calculator</h4>
 
-            <p>Put your 5 rep max for each lift into its 
+            <p>Input your 5 rep max for each lift <br> into its
                 corresponding field
             </p>
-            <h5>Squat</h5>
-            <input type="integer" id="squat-input"/>
-            <h3 id="squat-answer"></h3>
-            <h5>Bench</h5>
-            <input type="integer" id="bench-input"/>
-            <h3 id="bench-answer"></h3> 
-            <h5>Dead</h5>
-            <input type="integer" id="dead-input"/>
-            <h3 id="dead-answer"></h3>
-
-            <button id="getQuerySubmit">MAX OUT!</button>
-
+            <div>
+                <h6>Squat</h6>
+                <input type="number" id="squat-input" />
+                x 5 =>
+                <input id="squat-answer" readonly="true" />
+                <h6>Bench</h6>
+                <input type="number" id="bench-input" />
+                x 5 =>
+                <input id="bench-answer" readonly="true" />
+                <h6>Dead</h6>
+                <input type="number" id="dead-input" />
+                x 5 =>
+                <input id="dead-answer" readonly="true" />
+                <br>
+                <br>
+                <button id="get-maxes">MAX OUT!</button>
+            </div>
         </section>
+        <form class="add-q">
+            <h5>Additional Questions</h5>
+            <textarea id="q-form" rows="10" cols="30"></textarea>
+            <br>
+            Email
+            <br>
+            <input type="text" id="email">
+            <br>
+            <br>
+            <button id="question">Submit!</button>
+        </form>
 
-        <nav>
-            <ol>
-                <button class="warp"><a href="./appointment-form.html"></a>Meet your Coach!</button>
-            </ol>
-        </nav>
+
 
 
     </main>
     <script src="max.js"></script>
 </body>
+
 </html>
