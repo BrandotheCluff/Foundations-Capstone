@@ -13,9 +13,9 @@ inputDate.max = new Date(date.getTime() + (90 * 24 * 60 * 60 * 1000)).toLocaleDa
 function resetFormValues() {
     inputTime.value = '10:00:00'
     inputDate.value =  date.toLocaleDateString('en-ca')
-    inputFirstName.value = ''
-    inputLastName.value = ''
-    inputEmail.value = ''    
+    inputFirstName.value = null
+    inputLastName.value = null
+    inputEmail.value = null        
 }
 
 const possibleTimes = [
@@ -129,13 +129,14 @@ const possibleTimes = [
     },
 ]
 
-for (let i = 0; i < possibleTimes.length; i++) {
-    let obj = possibleTimes[i]
-    const newTime = document.createElement('option')
-    newTime.setAttribute('value', obj.server)
-    newTime.textContent = obj.display
-    inputTime.appendChild(newTime)
-}
+
+    for (let i = 0; i < possibleTimes.length; i++) {
+        let obj = possibleTimes[i]
+        const newTime = document.createElement('option')
+        newTime.setAttribute('value', obj.server)
+        newTime.textContent = obj.display
+        inputTime.appendChild(newTime)
+    }
 
 
 document.getElementById('postQuery').addEventListener('submit', (e) => {
