@@ -9,6 +9,15 @@ const qFormArea = document.getElementById('q-form')
 const qFormEmail = document.getElementById('email')
 
 
+function resetMaxForm(){
+    maxSquatVal.value = ''
+    maxBenchVal.value = ''
+    maxDeadVal.value = ''
+    squatInput.value = ''
+    benchInput.value = ''
+    deadInput.value = ''
+}
+
 function resetFormValues() {
 qFormArea.value = ''
 qFormEmail.value = ''
@@ -35,6 +44,12 @@ getMaxes.addEventListener('click', e => {
     calcMaxes()
 })
 
+const clearMaxes = document.getElementById('reset')
+
+clearMaxes.addEventListener('click', e => {
+    resetMaxForm()
+})
+
 const sendQuestions = document.getElementById('add-q')
 
 form.addEventListener('submit', (e) => {
@@ -46,5 +61,6 @@ form.addEventListener('submit', (e) => {
     .catch(err => console.log('front end error', err))
 })
 
+resetMaxForm()
 resetFormValues()
 

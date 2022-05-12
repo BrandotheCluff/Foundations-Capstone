@@ -137,19 +137,18 @@ for (let i = 0; i < possibleTimes.length; i++) {
     inputTime.appendChild(newTime)
 }
 
+
 document.getElementById('postQuery').addEventListener('submit', (e) => {
     e.preventDefault()
     const bodyObj = {
         firstName: inputFirstName.value,
         lastName: inputLastName.value,
         email: inputEmail.value,
-        // date: inputDate.value,
-        // time: inputTime.value
     }
     let dateTime = `${dateInput.value} ${timeInput.value}:00`
     let dateTimeObj = new Date(dateTime)
     
-    axios.post(`http://localhost:5000/appt`,{bodyObj, date: dateTimeObj})
+    axios.post(`http://localhost:5000/appt`,{body: bodyObj, date: dateTimeObj})
         .then(() => {
             resetFormValues()
         })

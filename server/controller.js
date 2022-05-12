@@ -22,7 +22,7 @@ module.exports = {
         sequelize.query(`
         Insert into client (client_firstname, client_lastname, client_email, date)
         values ('${firstName}', '${lastName}', '${email}', '${date}')
-        `)
+        returning *;`)
             .then(sillygoose => res.status(200).send(sillygoose))
                 .catch(err => console.log(err))
     },

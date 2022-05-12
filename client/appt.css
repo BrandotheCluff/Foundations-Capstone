@@ -38,6 +38,6 @@ body {
     background-blend-mode: darken;
 }
 
-button {
+button#postQuery {
    margin-left: 30%;
 }

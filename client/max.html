@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    
+
     <main>
         <section class="Calculator">
             <h4>Max Calculator</h4>
 
-            <p>Input your 5 rep max for each lift <br> into its
+            <p id="max-inst">Input your 5 rep max for each lift <br> into its
                 corresponding field
             </p>
             <div>
@@ -33,21 +33,40 @@
                 <input id="dead-answer" readonly="true" />
                 <br>
                 <br>
-                <button id="get-maxes">MAX OUT!</button>
+                <div class="button-field">
+                    <div id="button-flex">
+                        <div id="buttons">
+                            <button id="get-maxes">MAX OUT!</button>
+                            <button id="reset">Clear</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <form class="add-q">
-            <h5>Additional Questions</h5>
-            <textarea id="q-form" rows="10" cols="30"></textarea>
-            <br>
-            Email
-            <br>
-            <input type="text" id="email">
-            <br>
-            <br>
-            <button id="question">Submit!</button>
-        </form>
-
+        <div id="p-container">
+            <div id="p-transbox">
+            <p id="instructions" style="color:#ffffff">
+                Want to know how you can reach those goals??
+                <br>
+                Fill out the form below with any questions you have, and get that journey started!
+            </p>
+        </div>
+        </div>
+        <section class="question-area">
+            <div id="form-frame">
+                <form class="add-q">
+                    <h5>Additional Questions</h5>
+                    <textarea id="q-form" rows="10" cols="30"></textarea>
+                    <br>
+                    Email
+                    <br>
+                    <input type="text" id="email">
+                    <br>
+                    <br>
+                    <button id="question">Submit!</button>
+                </form>
+            </div>
+        </section>
 
 
 
