@@ -41,3 +41,8 @@ body {
 button#postQuery {
    margin-left: 30%;
 }
+
+#max-page {
+    background-color: rgb(33, 110, 218);
+    border-radius: 30px;
+}
